@@ -1,0 +1,36 @@
+<% if logged_in? %>
+    logged in as <%= curr_user_name %>
+<% else %>
+    not logged in
+<% end %>
+<!–– comment -->
+<%= form_for(:session, url: login_path) do |f| %> 
+  <%= f.text_field :name, :placeholder => "name" %> 
+  <%= f.password_field :password, :placeholder => "password" %> 
+  <%= f.submit "Log in", class: "btn-submit" %>
+<% end %>
+
+<% if !logged_in? %>
+    <%= form_for(@user) do |f| %>
+        <%= f.text_field :name, :placeholder => "name" %>
+        <%= f.text_field :optional, :value => '', :placeholder => "optional" %>
+        <%= f.password_field :password, :placeholder => "pass" %>
+        <%= f.password_field :password_confirmation, :placeholder => "confirm pass" %>
+        <%= f.submit "Create an account", class: "btn-submit" %>
+    <% end %>
+<% else %>
+    <%= form_for(:user, url: edit_path) do |f| %>
+        <%= f.text_field :optional, :value => '', :placeholder => "optional" %>
+        <%= f.password_field :password, :placeholder => "password" %>
+        <%= f.submit "Change thing", class: "btn-submit" %>
+    <% end %>
+<% end %>
+
+<% if session[:user_name] %>
+    <%= User.find_by(id: session[:user_id]).optional %>
+    <%= form_for(:session, url: logout_path) do |f| %> 
+        <%= f.submit "Log out", class: "btn-submit" %>
+    <% end %>
+<% else %>
+    .....
+<% end %>
