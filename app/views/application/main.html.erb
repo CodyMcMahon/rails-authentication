@@ -34,3 +34,7 @@
 <% else %>
     .....
 <% end %>
+
+<% @all_users.each do |u| %>
+    <p><%= u.name if u %> -> <%= u.optional if u%></p>
+<%end%>

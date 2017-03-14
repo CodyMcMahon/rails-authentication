@@ -5009,3 +5009,418 @@ Processing by ApplicationController#main as HTML
   Rendered application/main.html.erb within layouts/application (2.0ms)
 Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
   [1m[36mUser Load (3.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/" for 24.18.22.43 at 2017-03-14 05:32:00 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#main as HTML
+  Rendered application/main.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 24.18.22.43 at 2017-03-14 07:07:03 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#main as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/main.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 49ms (Views: 39.1ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users" for 24.18.22.43 at 2017-03-14 07:07:46 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6vK+aiGRCfQcOR5SYHKlOl8QCNV842Wa+Q45a7o27psxqygeBcekfg4O2aokWy0dxrnqRRrWKice5p0v8hKfHQ==", "user"=>{"name"=>"new person", "optional"=>"Im new here", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create an account"}
+Unpermitted parameter: optional
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'new person' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "password_digest", "optional", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "new person"], ["password_digest", "$2a$10$r..a39Ka1Ciwjd0qFNyGieK2KWMzdPbkVrwClzagj6GQNOYqbEUcy"], ["optional", "Im new here"], ["created_at", "2017-03-14 07:07:46.270995"], ["updated_at", "2017-03-14 07:07:46.270995"]]
+  [1m[35m (9.6ms)[0m  commit transaction
+Redirected to https://rails-authentication-codymccody.c9users.io/
+Completed 302 Found in 93ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/" for 24.18.22.43 at 2017-03-14 07:07:46 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#main as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered application/main.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 24.18.22.43 at 2017-03-14 07:08:48 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#main as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/main.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 32ms (Views: 24.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 24.18.22.43 at 2017-03-14 07:08:48 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 24.18.22.43 at 2017-03-14 07:08:49 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 24.18.22.43 at 2017-03-14 07:08:49 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 24.18.22.43 at 2017-03-14 07:08:49 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 24.18.22.43 at 2017-03-14 07:08:49 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 24.18.22.43 at 2017-03-14 07:08:49 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 24.18.22.43 at 2017-03-14 07:08:49 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 24.18.22.43 at 2017-03-14 07:08:49 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 24.18.22.43 at 2017-03-14 07:08:49 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 24.18.22.43 at 2017-03-14 07:08:49 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/session.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 24.18.22.43 at 2017-03-14 07:08:49 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 24.18.22.43 at 2017-03-14 07:08:49 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 24.18.22.43 at 2017-03-14 07:08:49 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/users" for 24.18.22.43 at 2017-03-14 07:09:01 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l547D1X/fCtMwbimF6obvNEy0qvywhd7+UIt56rObiFMx617canRoV72f15Tg5ObSJswO5T3WMYeqomj4uofpw==", "user"=>{"name"=>"b", "optional"=>"yo my name is b", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create an account"}
+Unpermitted parameter: optional
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'b' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "password_digest", "optional", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "b"], ["password_digest", "$2a$10$SVHgOwzr3E04Y8MMqDtpZ.UDn4EmjDHfw3wBUw4AWRhBP9kYon3si"], ["optional", "yo my name is b"], ["created_at", "2017-03-14 07:09:01.473834"], ["updated_at", "2017-03-14 07:09:01.473834"]]
+  [1m[35m (12.0ms)[0m  commit transaction
+Redirected to https://rails-authentication-codymccody.c9users.io/
+Completed 302 Found in 91ms (ActiveRecord: 12.7ms)
+
+
+Started GET "/" for 24.18.22.43 at 2017-03-14 07:09:01 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#main as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 15]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/main.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/logout" for 24.18.22.43 at 2017-03-14 07:09:39 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Bwh/jo5FerRFBaRgRzMNFAO4tOO1x2ckjVJGLQ3SqcXcUen6qhPXPlcyY5gDGoUzmhFWc9PyKJlquuJpRfbYQw==", "commit"=>"Log out"}
+Redirected to https://rails-authentication-codymccody.c9users.io/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 24.18.22.43 at 2017-03-14 07:09:39 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#main as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered application/main.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for 24.18.22.43 at 2017-03-14 07:09:51 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hr9RxAG1MjCSc7qzRAqcQoQ7Pj4zuVTGUbGWJs7IiiLF5sewJeOfuoBEfUsAIxRlHZLcrlWMG3u2WTJihuz7pA==", "user"=>{"name"=>"George Bush", "optional"=>"I did 911", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create an account"}
+Unpermitted parameter: optional
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'George Bush' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "password_digest", "optional", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "George Bush"], ["password_digest", "$2a$10$lKr52Put.6r7VO5mioVhh.YtO2Zqmd5uG2yPo8S3neo9nNxQjNYJm"], ["optional", "I did 911"], ["created_at", "2017-03-14 07:09:51.521549"], ["updated_at", "2017-03-14 07:09:51.521549"]]
+  [1m[36m (11.9ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-authentication-codymccody.c9users.io/
+Completed 302 Found in 91ms (ActiveRecord: 12.4ms)
+
+
+Started GET "/" for 24.18.22.43 at 2017-03-14 07:09:51 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#main as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 16]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered application/main.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 199.59.150.180 at 2017-03-14 07:25:53 +0000
+Cannot render console from 199.59.150.180! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#main as */*
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/main.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 52.21.137.163 at 2017-03-14 07:25:54 +0000
+Cannot render console from 52.21.137.163! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#main as */*
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered application/main.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 47.184.163.174 at 2017-03-14 07:26:19 +0000
+Cannot render console from 47.184.163.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#main as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/main.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 47.184.163.174 at 2017-03-14 07:26:19 +0000
+Cannot render console from 47.184.163.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 47.184.163.174 at 2017-03-14 07:26:19 +0000
+Cannot render console from 47.184.163.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 47.184.163.174 at 2017-03-14 07:26:19 +0000
+Cannot render console from 47.184.163.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 47.184.163.174 at 2017-03-14 07:26:19 +0000
+Cannot render console from 47.184.163.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 47.184.163.174 at 2017-03-14 07:26:19 +0000
+Cannot render console from 47.184.163.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 47.184.163.174 at 2017-03-14 07:26:19 +0000
+Cannot render console from 47.184.163.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 47.184.163.174 at 2017-03-14 07:26:19 +0000
+Cannot render console from 47.184.163.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 47.184.163.174 at 2017-03-14 07:26:19 +0000
+Cannot render console from 47.184.163.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/session.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 47.184.163.174 at 2017-03-14 07:26:19 +0000
+Cannot render console from 47.184.163.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 47.184.163.174 at 2017-03-14 07:26:19 +0000
+Cannot render console from 47.184.163.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 47.184.163.174 at 2017-03-14 07:26:19 +0000
+Cannot render console from 47.184.163.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 47.184.163.174 at 2017-03-14 07:26:19 +0000
+Cannot render console from 47.184.163.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 47.184.163.174 at 2017-03-14 07:26:19 +0000
+Cannot render console from 47.184.163.174! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 24.18.22.43 at 2017-03-14 07:28:08 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#main as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 16]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/main.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 24.18.22.43 at 2017-03-14 07:28:08 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 24.18.22.43 at 2017-03-14 07:28:08 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 24.18.22.43 at 2017-03-14 07:28:08 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 24.18.22.43 at 2017-03-14 07:28:08 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 24.18.22.43 at 2017-03-14 07:28:08 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 24.18.22.43 at 2017-03-14 07:28:08 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 24.18.22.43 at 2017-03-14 07:28:08 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 24.18.22.43 at 2017-03-14 07:28:08 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/session.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 24.18.22.43 at 2017-03-14 07:28:08 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 24.18.22.43 at 2017-03-14 07:28:08 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 24.18.22.43 at 2017-03-14 07:28:08 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 24.18.22.43 at 2017-03-14 07:28:08 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 24.18.22.43 at 2017-03-14 07:28:08 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 24.18.22.43 at 2017-03-14 07:28:10 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#main as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 16]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/main.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 24.18.22.43 at 2017-03-14 07:28:10 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 24.18.22.43 at 2017-03-14 07:28:10 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 24.18.22.43 at 2017-03-14 07:28:10 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 24.18.22.43 at 2017-03-14 07:28:10 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 24.18.22.43 at 2017-03-14 07:28:10 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 24.18.22.43 at 2017-03-14 07:28:10 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 24.18.22.43 at 2017-03-14 07:28:10 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 24.18.22.43 at 2017-03-14 07:28:10 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 24.18.22.43 at 2017-03-14 07:28:10 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 24.18.22.43 at 2017-03-14 07:28:10 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/session.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 24.18.22.43 at 2017-03-14 07:28:10 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 24.18.22.43 at 2017-03-14 07:28:10 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 24.18.22.43 at 2017-03-14 07:28:10 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 24.18.22.43 at 2017-03-14 07:30:17 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ApplicationController#main as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 16]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered application/main.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/session.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 24.18.22.43 at 2017-03-14 07:30:17 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 24.18.22.43 at 2017-03-14 07:30:17 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 24.18.22.43 at 2017-03-14 07:30:17 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 24.18.22.43 at 2017-03-14 07:30:17 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 24.18.22.43 at 2017-03-14 07:30:17 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 24.18.22.43 at 2017-03-14 07:30:17 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 24.18.22.43 at 2017-03-14 07:30:17 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 24.18.22.43 at 2017-03-14 07:30:17 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/session.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 24.18.22.43 at 2017-03-14 07:30:17 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 24.18.22.43 at 2017-03-14 07:30:17 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 24.18.22.43 at 2017-03-14 07:30:17 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 24.18.22.43 at 2017-03-14 07:30:17 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 24.18.22.43 at 2017-03-14 07:30:17 +0000
+Cannot render console from 24.18.22.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255

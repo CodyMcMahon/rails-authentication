@@ -7,7 +7,8 @@ class UsersController < ApplicationController
         @user = User.new user_params
         @user[:optional] = params[:user][:optional] if !params[:user][:optional].empty?
         if @user.save
-            #session[:user_id] = @user.id
+            session[:user_id] = @user.id
+            session[:user_name] = @user.name
             redirect_to '/'
         else
             redirect_to '/im_gay'

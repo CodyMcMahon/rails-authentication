@@ -13,6 +13,7 @@ class ApplicationController < ActionController::Base
   
   def main
      @user = User.new
+     @all_users = User.all
   end
   
   
